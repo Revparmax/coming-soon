@@ -1,0 +1,30 @@
+{
+	"name": "Revparmax",
+	"title": "Web Application for Revparmax",
+	"description": "This is a presentation for Revparmax.com",
+	"version": "1.0.0",
+	"homepage": "http://www.revparmax.com",
+	"author": {
+		"name": "Imran Esmail",
+		"email": "imran@revparmax.com",
+		"url": "http://www.imranesmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"bugs": {
+    "url": ""
+  	},
+	"dependencies": {
+		"grunt": ">=0.3.x",
+		"grunt-contrib": ">=0.1.x",
+		"grunt-less": ">=0.1.x",
+		"grunt-reload": ">=0.1.x"
+	},
+	"devDependencies": {
+		"grunt": ">=0.3.x"
+	},
+	"engine": "node >= 0.4.x",
+	"keywords": []
+}

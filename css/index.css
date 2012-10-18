@@ -1,0 +1,60 @@
+@import "impress-demo.css";
+.red {
+  color: #bf191e;
+}
+.step {
+  font-family: 'Lato', sans-serif;
+}
+#multiple embed {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#multiple embed.first {
+  margin-left: 0px;
+}
+#stern img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 20px 50px 0 0;
+  vertical-align: middle;
+}
+#full-cost .god-bless {
+  font-size: 25px;
+}
+#surprise p.found {
+  margin-left: 150px;
+}
+#surprise p.them {
+  margin-left: 100px;
+}
+#surprise span.surprised {
+  font-size: 150px;
+}
+#annually p {
+  margin-left: 100px;
+}
+#annually span.twofifty {
+  font-size: 150px;
+}
+#whoa {
+  font-weight: bold;
+  font-size: 200px;
+}
+#ship span.my {
+  font-size: 200px;
+}
+#ship p.property {
+  position: relative;
+  left: 350px;
+  bottom: 150px;
+  width: 500px;
+}
+#employee ul {
+  margin-top: 30px;
+  margin-left: 60px;
+  list-style: disc;
+}
+#revparmax .title {
+  font-size: 100px;
+}
