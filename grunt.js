@@ -36,13 +36,12 @@ module.exports = function(grunt) {
         }
     },
     watch: {
-      files: ['<config:less.files>'],
+      files: ['<config:lessFiles>'],
       tasks: 'less'
     },
-
+    lessFiles: ['css/*.less'],
     // Build for less files
     less: {
-      files: ['css/*.less'],
       compile: {
         options: {
           paths: ["css"]

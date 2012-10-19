@@ -5,11 +5,11 @@
 .step {
   font-family: 'Lato', sans-serif;
 }
-#multiple embed {
+#multiple img {
   margin-top: 20px;
   margin-left: 10px;
 }
-#multiple embed.first {
+#multiple img.first {
   margin-left: 0px;
 }
 #stern img {
