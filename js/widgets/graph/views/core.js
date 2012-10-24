@@ -24,6 +24,7 @@ define([
 		yDomain         = null,
 		dateParse       = d3.time.format("%Y-%m-%d"),
 		yFormat         = d3.format(",f");
+		roundYear		= false;
 
 		// Core Graph Function
 		// ==============================================
@@ -36,7 +37,9 @@ define([
 				});
 
 				x	.domain(xDomain || d3.extent(seriesData.map(function(d){ return d.x; })))
-					.range([0,availableWidth()]).nice(d3.time.year);
+					.range([0,availableWidth()]);
+
+				if(roundYear) x.nice(d3.time.year);
 
 				y	.domain(yDomain || d3.extent(seriesData.map(function(d){ return d.y; }))).nice()
 					.range([availableHeight(),0]);
@@ -121,6 +124,12 @@ define([
 		base.xDomain = function(_){
 			if (!arguments.length) return xDomain;
 			xDomain = _;
+			return base;
+		};
+
+		base.roundYear = function(_){
+			if (!arguments.length) return roundYear;
+			roundYear = _;
 			return base;
 		};
 		

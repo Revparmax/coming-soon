@@ -77,7 +77,8 @@ define([
 		chart.xAxis = xAxis;
 		chart.yAxis = yAxis;
 
-		d3.rebind( chart, base, 'getX', 'getY', 'areaWidth');
+		d3.rebind( chart, base, 'getX', 'getY', 'areaWidth', 'roundYear');
+		d3.rebind( chart, lines, 'showCircles');
 
 		chart.on = function(_){
 			if (!arguments.length) return events;

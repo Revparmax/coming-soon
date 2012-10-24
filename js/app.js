@@ -1,18 +1,22 @@
 require([
 	
   'jquery',
-  'js/widgets/graph/views/graph',
+  'js/widgets/ytd/views/graph',
+  'js/widgets/forecast/views/graph',
 	'impress'
 
-], function($, lineGraph){
+], function($, ytdGraph, forecastGraph){
 
   impress().init();
 
-  if ("ontouchstart" in document.documentElement) { 
+  if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
   }
 
-  var graph = new lineGraph({el:'#ytd-performance'});
-  graph.render();
+  var ytd = new ytdGraph({el:'#ytd-performance'});
+  ytd.render();
+
+  var forecast = new forecastGraph({el:'#forecasts'});
+  forecast.render();
 
 });

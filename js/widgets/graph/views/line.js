@@ -21,6 +21,7 @@ define([
 		isArea      = function(d){ return d.area;},
 		interpolate = 'linear',
 		snapToGrid  = false,
+		showCircles = true,
 		snapLine,
 		groups,
 		xScale,
@@ -112,7 +113,7 @@ define([
 				// Circles
 				// ==============================================
 
-				groups.call(circles);
+				if(showCircles) groups.call(circles);
 
 
 				chart.container = this;
@@ -157,6 +158,12 @@ define([
 		chart.snapToGrid = function(_){
 			if (!arguments.length) return snapToGrid;
 			snapToGrid = _;
+			return chart;
+		};
+
+		chart.showCircles = function(_){
+			if (!arguments.length) return showCircles;
+			showCircles = _;
 			return chart;
 		};
 
