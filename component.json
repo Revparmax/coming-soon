@@ -1,0 +1,11 @@
+{
+  "name": "Revparmax | Presentation",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "git://github.com/components/jquery.git#1.8.1",
+    "backbone": "git://github.com/documentcloud/backbone.git#0.9.2",
+    "requirejs": "git://github.com/jrburke/requirejs#2.1.1",
+    "impress.js": "git://github.com/bartaz/impress.js.git#0.5.3",
+    "d3": "git://github.com/mbostock/d3.git#v2.10.3"
+  }
+}

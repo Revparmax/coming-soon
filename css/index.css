@@ -1,9 +1,15 @@
 @import "impress-demo.css";
+
+@import "bootstrap/css/bootstrap.min.css";
+body {
+  background: url('../css/imgs/bg.png');
+}
 .red {
   color: #bf191e;
 }
 .step {
   font-family: 'Lato', sans-serif;
+  width: 940px;
 }
 #multiple img {
   margin-top: 20px;
@@ -57,4 +63,39 @@
 }
 #revparmax .title {
   font-size: 100px;
+}
+.rpm-graph .rpm-axis {
+  shape-rendering: crispEdges;
+}
+.rpm-graph .rpm-axis text {
+  font-weight: normal;
+  font-size: 10px;
+  fill: #333333;
+}
+.rpm-graph .rpm-axis .domain,
+.rpm-graph .rpm-axis .tick {
+  fill: none;
+  stroke: #cfcfcf;
+  stroke-width: 1;
+}
+.rpm-graph .rpm-axis.y-axis .tick {
+  stroke-dasharray: 3;
+}
+.summary {
+  text-align: center;
+}
+.summary div {
+  background: #333;
+  border-radius: 5px;
+  padding: 10px 0;
+  color: white;
+}
+.summary div h5 {
+  font-size: 20px;
+}
+.summary div p {
+  font-size: 38px;
+}
+.ytd-graph {
+  margin-top: 30px;
 }

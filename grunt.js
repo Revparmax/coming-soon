@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       files: ['<config:lessFiles>'],
       tasks: 'less'
     },
-    lessFiles: ['css/*.less'],
+    lessFiles: ['css/less/*.less'],
     // Build for less files
     less: {
       compile: {
