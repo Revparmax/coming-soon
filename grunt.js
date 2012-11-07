@@ -19,15 +19,15 @@ module.exports = function(grunt) {
       tasks: 'less'
     },
 
-    lessFiles: ['css/less/*.less'],
+    lessFiles: ['app/css/less/*.less'],
     // Build for less files
     less: {
       development: {
         options: {
-          paths: ["css"]
+          paths: ["app/css"]
         },
         files: {
-          "css/index.css": ["css/bootstrap.less"]
+          "app/css/index.css": ["app/css/bootstrap.less"]
         }
       }
     },
@@ -35,9 +35,11 @@ module.exports = function(grunt) {
     requirejs: {
       compile: {
         options:{
+          optimizeCss: 'none',
           optimize: 'none',
           baseUrl: './js',
           name: 'config',
+          mainConfigFile: 'app/js/config.js',
           appDir: 'app',
           dir: 'dist'
         }
@@ -68,7 +70,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-reload');
 
   // Register default tasks
-  grunt.registerTask('default', 'less');
+  grunt.registerTask('default', 'less requirejs');
 
   // Default task.
   //grunt.registerTask('default', 'lint qunit concat min');
