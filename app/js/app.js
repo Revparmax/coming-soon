@@ -1,8 +1,8 @@
 require([
 	
   'jquery',
-  'js/widgets/ytd/views/graph',
-  'js/widgets/forecast/views/graph',
+  'widgets/ytd/views/graph',
+  'widgets/forecast/views/graph',
 	'impress'
 
 ], function($, ytdGraph, forecastGraph){
