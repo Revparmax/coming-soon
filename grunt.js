@@ -3,52 +3,45 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+
     pkg: '<json:package.json>',
+
     meta: {
       banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
         '<%= pkg.homepage ? "* " + pkg.homepage + "\n" : "" %>' +
         '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-        ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
+        '*/'
     },
-    lint: {
-      files: ['grunt.js', 'lib/**/*.js', 'test/**/*.js']
-    },
-    qunit: {
-      files: ['test/**/*.html']
-    },
-    concat: {
-      dist: {
-        src: ['<banner:meta.banner>', '<file_strip_banner:lib/<%= pkg.name %>.js>'],
-        dest: 'dist/<%= pkg.name %>.js'
-      }
-    },
-    min: {
-      dist: {
-        src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],
-        dest: 'dist/<%= pkg.name %>.min.js'
-      }
-    },
-    reload: {
-        port: 80,
-        proxy: {
-            host: 'localhost'
-        }
-    },
+
     watch: {
-      files: ['<config:less.files>'],
+      files: ['<config:lessFiles>'],
       tasks: 'less'
     },
 
+    lessFiles: ['app/css/less/*.less'],
     // Build for less files
     less: {
-      files: ['css/*.less'],
-      compile: {
+      development: {
         options: {
-          paths: ["css"]
+          paths: ["app/css"]
         },
         files: {
-          "css/index.css": ["css/bootstrap.less"]
+          "app/css/index.css": ["app/css/bootstrap.less"]
+        }
+      }
+    },
+
+    requirejs: {
+      compile: {
+        options:{
+          optimizeCss: 'none',
+          optimize: 'none',
+          baseUrl: './js',
+          name: 'config',
+          mainConfigFile: 'app/js/config.js',
+          appDir: 'app',
+          dir: 'dist'
         }
       }
     },
@@ -77,7 +70,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-reload');
 
   // Register default tasks
-  grunt.registerTask('default', 'less');
+  grunt.registerTask('default', 'less requirejs');
 
   // Default task.
   //grunt.registerTask('default', 'lint qunit concat min');

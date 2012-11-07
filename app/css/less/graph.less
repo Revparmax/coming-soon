@@ -1,0 +1,38 @@
+@graphLines: #cfcfcf;
+@graphText: #333;
+
+.rpm-graph{
+	.rpm-axis{
+		shape-rendering: crispEdges;
+		text{
+			font-weight: normal;
+			font-size: 10px;
+			fill: @graphText;
+		}
+		.domain, .tick{
+			fill: none;
+			stroke: @graphLines;
+			stroke-width: 1;
+		}
+		&.y-axis{
+			.tick { stroke-dasharray: 3; }
+		}
+	}
+}
+
+.summary{
+	text-align: center;
+	div{
+		background: #333;
+		border-radius: 5px;
+		padding: 10px 0;
+		color: white;
+		h5{
+			font-size: 20px;
+		}		
+		p{
+			font-size: 38px;
+		}
+	}
+
+}
