@@ -4,8 +4,8 @@ define([
 	'underscore',
 	'backbone',
 	'd3',
-	'js/widgets/graph/views/utils',
-	'js/widgets/graph/views/circles'
+	'widgets/graph/views/utils',
+	'widgets/graph/views/circles'
 	
 ], function($, _, Backbone, d3, utils, chartCircles){
 

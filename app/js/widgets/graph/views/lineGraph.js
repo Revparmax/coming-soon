@@ -4,9 +4,9 @@ define([
 	'underscore',
 	'backbone',
 	'd3',
-	'js/widgets/graph/views/core',
-	'js/widgets/graph/views/axis',
-	'js/widgets/graph/views/line'
+	'widgets/graph/views/core',
+	'widgets/graph/views/axis',
+	'widgets/graph/views/line'
 	
 ], function($, _, Backbone, d3, core, axis, line){
 

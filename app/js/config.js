@@ -3,9 +3,9 @@
 
     //enforceDefine: true,
 
-    baseUrl: '',
+    baseUrl: './js',
 
-    deps: ['js/app'],
+    deps: ['app'],
 
     shim: {
       'jquery': {
@@ -29,13 +29,13 @@
     paths: {
 
       // Support Libraries
-      impress: 'components/impress.js/js/impress',
-      d3: 'components/d3/d3.v2.min',
-      backbone: 'components/backbone/backbone',
-      underscore: 'components/underscore/underscore',
-      jquery: 'components/jquery/jquery',
-      text: 'components/text/text',
-      handlebars: 'components/handlebars.js/handlebars-1.0.0-rc.1'
+      impress: '../components/impress.js/js/impress',
+      d3: '../components/d3/d3.v2.min',
+      backbone: '../components/backbone/backbone',
+      underscore: '../components/underscore/underscore',
+      jquery: '../components/jquery/jquery',
+      text: '../components/text/text',
+      handlebars: '../components/handlebars.js/handlebars-1.0.0-rc.1'
 
     }
 

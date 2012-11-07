@@ -4,7 +4,7 @@ define([
 	'underscore',
 	'backbone',
 	'd3',
-	'js/widgets/graph/views/utils'
+	'widgets/graph/views/utils'
 	
 ], function($, _, Backbone, d3, utils){
 

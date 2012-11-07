@@ -3,8 +3,8 @@ define([
 	'jquery',
 	'backbone',
 	'underscore',
-	'js/widgets/graph/views/lineGraph',
-	'text!js/widgets/ytd/templates/master.html',
+	'widgets/graph/views/lineGraph',
+	'text!widgets/forecast/templates/master.html',
 	'd3',
 	'handlebars'
 
@@ -27,18 +27,18 @@ define([
 
 			var el = this.el;
 
-			d3.csv("js/widgets/shared/resources/hiex/ytd.csv", function(data){
-			
+			d3.csv("js/widgets/shared/resources/hiex/forecast.csv", function(data){
+				
 				var chart,
 					parse = d3.time.format("%Y-%m-%d").parse;
 
 				chart = lineGraph()
 					.areaWidth(900)
 					.getX(function(d){ return parse(d.date); })
-					.getY(function(d){ return +d.revpar; })
-					.roundYear(true);
+					.getY(function(d){ return +d.amount; })
+					.showCircles(false);
 		
-				d3.select('.ytd-graph')
+				d3.select('.forecast-graph')
 					.datum(data)
 					.transition().duration(500)
 					.call(chart);
