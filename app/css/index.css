@@ -4,6 +4,15 @@
 body {
   background: url('../css/imgs/bg.png');
 }
+small {
+  font-size: 30px;
+}
+.emphasis {
+  font-size: 65px;
+}
+.green {
+  color: #008e39;
+}
 .red {
   color: #bf191e;
 }
@@ -11,7 +20,7 @@ body {
   color: #008dc0;
 }
 .orange {
-  color: #f9925e;
+  color: #f89900;
 }
 .step {
   font-family: 'Lato', sans-serif;
@@ -62,7 +71,9 @@ body {
   bottom: 150px;
   width: 500px;
 }
+#benefits ul,
 #employee ul {
+  font-size: 30px;
   margin-top: 30px;
   margin-left: 60px;
   list-style: disc;
