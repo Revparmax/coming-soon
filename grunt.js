@@ -70,7 +70,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-reload');
 
   // Register default tasks
-  grunt.registerTask('default', 'less');
+  grunt.registerTask('default', 'less requirejs');
 
   // Default task.
   //grunt.registerTask('default', 'lint qunit concat min');

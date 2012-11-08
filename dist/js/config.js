@@ -12958,7 +12958,7 @@ define('text',['module'], function (module) {
     return text;
 });
 
-define('text!widgets/ytd/templates/master.html',[],function () { return '<p>This has led to revpar at <span class="orange">our property</span> that has outpaced the <span class="blue">competition</span>...</p>\n<div class="ytd-graph"></div>\n<ul class="summary row">\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Our Revpar</h5>\n\t\t\t<p>$92.39</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Comp Revpar</h5>\n\t\t\t<p>$82.69</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Index</h5>\n\t\t\t<p>111.73</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Rank</h5>\n\t\t\t<p>2 of 8</p>\n\t\t</div>\n\t</li>\n</ul>';});
+define('text!widgets/ytd/templates/master.html',[],function () { return '<p>In testing, this has led to revpar at <span class="orange">our client\'s property</span> that has outpaced the <span class="blue">competition</span>...</p>\n<div class="ytd-graph"></div>\n<ul class="summary row">\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Our Revpar</h5>\n\t\t\t<p>$92.39</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Comp Revpar</h5>\n\t\t\t<p>$82.69</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Index</h5>\n\t\t\t<p>111.73</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Rank</h5>\n\t\t\t<p>2 of 8</p>\n\t\t</div>\n\t</li>\n</ul>';});
 
 // lib/handlebars/base.js
 
@@ -14944,7 +14944,7 @@ define('widgets/ytd/views/graph',[
 	return GraphView;
 
 });
-define('text!widgets/forecast/templates/master.html',[],function () { return '<p>We now have monthly revenue <span class="orange">forecasts</span> accurate to within 5% of <span class="blue">actual</span></p>\n<div class="forecast-graph"></div>\n<ul class="summary row">\n\t<li class="span3">\n\t\t<div>\n\t\t\t<h5>Forecasted Revenue</h5>\n\t\t\t<p>$1,053,851</p>\n\t\t</div>\n\t</li>\n\t<li class="span3">\n\t\t<div>\n\t\t\t<h5>Actual Revenue</h5>\n\t\t\t<p>$1,060,386</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Variance</h5>\n\t\t\t<p>+0.6%</p>\n\t\t</div>\n\t</li>\n</ul>';});
+define('text!widgets/forecast/templates/master.html',[],function () { return '<p>...monthly revenue <span class="orange">forecasts</span> accurate to within 5% of <span class="blue">actual</span></p>\n<div class="forecast-graph"></div>\n<ul class="summary row">\n\t<li class="span3">\n\t\t<div>\n\t\t\t<h5>Forecasted Revenue</h5>\n\t\t\t<p>$1,053,851</p>\n\t\t</div>\n\t</li>\n\t<li class="span3">\n\t\t<div>\n\t\t\t<h5>Actual Revenue</h5>\n\t\t\t<p>$1,060,386</p>\n\t\t</div>\n\t</li>\n\t<li class="span2">\n\t\t<div>\n\t\t\t<h5>Variance</h5>\n\t\t\t<p>+0.6%</p>\n\t\t</div>\n\t</li>\n</ul>';});
 
 define('widgets/forecast/views/graph',[
 
